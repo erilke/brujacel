@@ -18,12 +18,12 @@ var br ={
 
 	},
 	onSuccess: function(heading) {
-    	$('#valor_brujula').html('Apuntando al: ' + heading.magneticHeading );	
+    	$('#valor_brujula').html('Grados ' + heading.magneticHeading );	
 	},
 
 	onError: function(error) {
 	    alert('CompassError: ' + error.code);
-	},
+	}
 
 
 };

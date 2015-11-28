@@ -19,9 +19,9 @@ var fn = {
 	},
 		brTap: function(){
 		if($(this).index() == 0)
-			ac.init();
+			br.init();
 		else
-			ac.stop();
+			br.stop();
 	}
 
 };

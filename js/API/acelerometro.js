@@ -27,6 +27,6 @@ var ac ={
 
 	onError:function() {
 		alert('onError!');
-	},
+	}
 
 };
