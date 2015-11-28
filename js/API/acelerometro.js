@@ -10,7 +10,11 @@ var ac ={
 	},
 	stop: function(){
 		alert("Detener");
-		navigator.accelerometer.clearWatch(ac.watchID);
+		if(ac.watchId != null){
+			navigator.accelerometer.clearWatch(ac.watchID);
+			ac.watchId = null;
+			$('#valor_acelerometro').html('Detenido' );	
+		}
 	},
 
 	 onSuccess: function(acceleration) {

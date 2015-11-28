@@ -9,7 +9,13 @@ var br ={
 	},
 	stop: function(){
 		alert("Detener");
-		navigator.compass.clearWatch(br.watchID);
+		if(br.watchId != null){
+			navigator.compass.clearWatch(br.watchID);
+			br.watchId = null;
+			$('#valor_brujula').html('Detenida' );	
+
+		}
+
 	},
 	onSuccess: function(heading) {
     	$('#valor_brujula').html('Apuntando al: ' + heading.magneticHeading );	
