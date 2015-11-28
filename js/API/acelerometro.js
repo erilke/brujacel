@@ -1,6 +1,6 @@
 var ac ={
-	options = { frequency: 3000 },
-	watchId = null,
+	options:{ frequency: 3000 },
+	watchId: null,
 
 	init: function() {
 			alert("Iniciar");
@@ -15,10 +15,10 @@ var ac ={
 
 	 onSuccess: function(acceleration) {
 
-	$('#valor_acelerometro').html('Acceleration X: ' + acceleration.x + '\n' +
-          'Acceleration Y: ' + acceleration.y + '\n' +
-          'Acceleration Z: ' + acceleration.z + '\n' +
-          'Timestamp: '      + acceleration.timestamp + '\n');	 	
+	$('#valor_acelerometro').html('X: ' + acceleration.x + '\n' +
+          ' Y: ' + acceleration.y + '\n' +
+          ' Z: ' + acceleration.z + '\n' +
+          'TS: '      + acceleration.timestamp + '\n');	 	
 
 	},
 
