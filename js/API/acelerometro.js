@@ -4,8 +4,7 @@ var ac ={
 
 	init: function() {
 			alert("Iniciar");
-			ac.options = { frequency: 3000 };  // Update every 3 seconds
-			ac.watchID = navigator.accelerometer.watchAcceleration(ac.onSuccess, ac.onError, options);
+			ac.watchID = navigator.accelerometer.watchAcceleration(ac.onSuccess, ac.onError, ac.options);
 
 	},
 	stop: function(){
