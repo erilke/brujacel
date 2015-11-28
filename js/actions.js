@@ -8,6 +8,9 @@ var fn = {
 		$("#acelerometro .individual li").tap(fn.acTap);
 		$("#brujula .individual li").tap(fn.brTap);
 	},
+	ready:function(){
+		document.addEventListener("deviceready", fn.init, false);
+	},
 	acTap: function(){
 		if($(this).index() == 0)
 			ac.init();
@@ -26,4 +29,5 @@ var fn = {
 
 
 
-$(fn.init);
+//$(fn.init);
+$(fn.ready);
