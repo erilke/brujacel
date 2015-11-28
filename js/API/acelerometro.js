@@ -3,8 +3,9 @@ var ac ={
 	watchId: null,
 
 	init: function() {
-			alert("Iniciar");
-			ac.watchID = navigator.accelerometer.watchAcceleration(ac.onSuccess, ac.onError, ac.options);
+		alert("Iniciar");
+		if (!ac.watchId)
+		ac.watchID = navigator.accelerometer.watchAcceleration(ac.onSuccess, ac.onError, ac.options);
 
 	},
 	stop: function(){

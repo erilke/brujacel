@@ -22,6 +22,7 @@
 
 		<!-- Plugins -->
 		<gap:plugin name="org.apache.cordova.device-motion" />
+        <gap:plugin name="org.apache.cordova.device-orientation" />
 
         
     </widget>
