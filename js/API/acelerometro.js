@@ -1,6 +1,6 @@
 var ac ={
-	var options = { frequency: 3000 },
-	var watchId = null,
+	options = { frequency: 3000 },
+	watchId = null,
 
 	init: function() {
 			alert("Iniciar");
