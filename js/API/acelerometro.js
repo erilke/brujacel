@@ -5,13 +5,13 @@ var ac ={
 	init: function() {
 		alert("Iniciar");
 		if (!ac.watchId)
-		ac.watchID = navigator.accelerometer.watchAcceleration(ac.onSuccess, ac.onError, ac.options);
+		ac.watchId = navigator.accelerometer.watchAcceleration(ac.onSuccess, ac.onError, ac.options);
 
 	},
 	stop: function(){
 		alert("Detener");
 		if(ac.watchId != null){
-			navigator.accelerometer.clearWatch(ac.watchID);
+			navigator.accelerometer.clearWatch(ac.watchId);
 			ac.watchId = null;
 			$('#valor_acelerometro').html('Detenido' );	
 		}

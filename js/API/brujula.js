@@ -5,14 +5,14 @@ var br ={
 	init: function() {
 		alert("Iniciar");
 		if (!br.watchId)
-		br.watchID = navigator.compass.watchHeading(br.onSuccess, br.onError, br.options);
+		br.watchId = navigator.compass.watchHeading(br.onSuccess, br.onError, br.options);
 	},
 	stop: function(){
 		alert("Detener");
 		if(br.watchId != null){
-			navigator.compass.clearWatch(br.watchID);
+			navigator.compass.clearWatch(br.watchId);
 			br.watchId = null;
-			$('#valor_brujula').html('Detenida' );	
+			$('#valor_brujula').html('Detenida');	
 
 		}
 
